@@ -1,0 +1,37 @@
+/* airplane safety */
+@media screen 
+	and (min-device-width: 1200px) {
+		.software {width: 440px; height: 583px;
+			background:url (images/software.png) 0px;}
+	}
+
+/* Elevator safety*/
+@media screen
+	and (min-device-width: 1000px)
+	and (max-device-width: 1200px) {
+		.software {width: 436px; height: 583px;
+			background:url (images/software.png) 440 0px;}
+	}
+
+/* Computerized voting*/
+@media screen
+	and (min-device-width: 800px)
+	and (max-device-width: 1000px) {
+		.software {width: 328px; height: 583px;
+			background:url (images/software.png) 483 0px;}
+	}
+
+/* Wait really */
+@media screen
+	and (min-device-width: 600px)
+	and (max-device-width: 800px) {
+		.software {width: 716px; height: 628px;
+			background:url (images/software.png) 0 -583px;}
+	}
+
+/* blockchain */
+@media screen
+	and (max-device-width: 600px) {
+		.software {width: 488px; height: 628px;
+			background:url (images/software.png) 716 -583px;}
+	}
