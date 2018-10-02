@@ -18,6 +18,9 @@ This solution worked, but I do think there is a better, cleaner solution that th
 3) I spent approximalty 3 hours on this assignment. Most of that time was spent on a small detail, querrying the min and max SCREEN width versus just the width!!!
 
 
+I wrote this program and tested it by opening index.html in the web browser. BEcuase of this testing method (and because I had some major initial confusion about git) I did not commit often. I will work on this for the next lab/assignment!
+
+
 
 
 
