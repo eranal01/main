@@ -1,37 +1,65 @@
-/* airplane safety */
-@media screen 
-	and (min-device-width: 1200px) {
-		.software {width: 440px; height: 583px;
-			background:url (images/software.png) 0px;}
+.software {
+	background: url("software.png");
+}
+
+
+/* Aicraft safety*/
+@media screen and (min-width: 1200px) {
+		.software {
+			width: 440px; 
+			height: 584px;
+			background-image:url ("software.png");
+		}
 	}
+
 
 /* Elevator safety*/
-@media screen
-	and (min-device-width: 1000px)
-	and (max-device-width: 1200px) {
-		.software {width: 436px; height: 583px;
-			background:url (images/software.png) 440 0px;}
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+		.software {
+			width: 874px; /*436*/
+			height: 583px;
+			background-image:url ("software.png");
+			overflow: hidden;
+			margin-left: -440px;
+		}
 	}
 
-/* Computerized voting*/
-@media screen
-	and (min-device-width: 800px)
-	and (max-device-width: 1000px) {
-		.software {width: 328px; height: 583px;
-			background:url (images/software.png) 483 0px;}
+	/* Computerized voting*/
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+		.software {
+			width: 1204px; 
+			height: 583px;
+			background-image:url ("software.png");
+			overflow: hidden;
+			margin-left: -874px;
+		}
 	}
 
-/* Wait really */
-@media screen
-	and (min-device-width: 600px)
-	and (max-device-width: 800px) {
-		.software {width: 716px; height: 628px;
-			background:url (images/software.png) 0 -583px;}
+	/* Wait really */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+		.software {
+			width: 716px; 
+			height: 1211px;
+			background-image:url ("software.png");
+			overflow: hidden;
+			margin-top: -590px;
+
+		}
 	}
 
-/* blockchain */
-@media screen
-	and (max-device-width: 600px) {
-		.software {width: 488px; height: 628px;
-			background:url (images/software.png) 716 -583px;}
+	/* blockchain */
+@media only screen and (max-width: 600px) {
+		.software {
+			width: 1204px; 
+			height: 1211px;
+			background-image:url ("software.png");
+			overflow: hidden;
+			margin-left: -718px;
+			margin-top: -590px;
+		}
 	}
+
+
+
+
+
