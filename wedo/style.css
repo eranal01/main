@@ -1,11 +1,38 @@
 
+body {
+	background-color: black;
+}
+
+video {
+
+	width: 700px;
+	position: absolute;
+	top: 12%;
+	bottom: 12%;
+	margin-left: 360px;
+}
+
+h2 {
+
+	color: pink;
+
+}
+
+#title {
+
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+
+}
+
 
 #lyrics {
-
-	color: orange;
-	font-size: 26;
+	color: grey;
+	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: bold;
-
+	text-align: center;
+	padding-top: 550px;
 
 }
