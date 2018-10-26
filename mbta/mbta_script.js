@@ -80,7 +80,7 @@ function initMap() {
 						request = new XMLHttpRequest();
 						var urlString = "https://chicken-of-the-sea.herokuapp.com/redline/schedule.json?stop_id=" + coordinates[1][3];
 
-
+						/* Parse JSON data from chicken of the sea resource (thanks Ming!)*/
 						request.open("GET", urlString, true);
 						request.onreadystatechange = function() {
 							if ((request.readyState == 4) && (request.status == 200)) {
@@ -166,8 +166,7 @@ function initMap() {
 			map: map,
 			icon: home
 		});
-
-		/*take out of this function!!!!! (Callback) */
+	/* Calculate disatnce to closest station */ 
 		Number.prototype.toRad = function() {
 	   		return this * Math.PI / 180;
 		} 
@@ -202,7 +201,7 @@ function initMap() {
  		}
  		var index = indexOfSmallest(distances);
 
- 				/* Open info window at current location when cliked*/
+	/* Open info window at current location when cliked*/
 		var currInfoWindow = new google.maps.InfoWindow({
 			content: 'Closest Station: ' + coordinates[index][0] + '<br>Distance: ' + Math.round(distances[index]*100) / 100 + 'mi',
 			map: map
@@ -221,6 +220,7 @@ function initMap() {
 		strokeWeight: 4
 	});
 
+		/* Draw polyline of shortest path from location to nearest station*/
 		shortestPath.setMap(map);
 
 		currLoc.addListener('click', function() {
