@@ -23,7 +23,7 @@
                     dateRead = dateFull.slice(0, 24);
                     newEntry = dateRead + " - ";
                     newEntry += $( "#msg" ).val();
-                    localStorage.setItem(dateRead,newEntry);
+                    localStorage.setItem(i,newEntry);
                     $( "#log" ).prepend(newEntry + "<br>");
                     i += 1;
                     $( "#msg" ).val("");
