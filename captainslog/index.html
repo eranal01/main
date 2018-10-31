@@ -10,24 +10,21 @@
     <script>
         $( document ).ready(function() {
             for (var i = 0; i < localStorage.length; i++) {
-                console.log(localStorage.length);
-                console.log("reprint:" + i);
                 $( "#log" ).prepend(localStorage.getItem(localStorage.key(i)) + "<br>");
             }
 
             
             $( "#msg" ).keypress(function(e){
                 if (e.which == 13) {
-                    console.log(i);
+                    milliDate = Date.now();
                     dateFull = Date();
                     dateRead = dateFull.slice(0, 24);
                     newEntry = dateRead + " - ";
                     newEntry += $( "#msg" ).val();
-                    localStorage.setItem(i,newEntry);
+                    localStorage.setItem(milliDate,newEntry);
                     $( "#log" ).prepend(newEntry + "<br>");
                     i += 1;
                     $( "#msg" ).val("");
-                    console.log(localStorage.length);
 
                 }
             });
