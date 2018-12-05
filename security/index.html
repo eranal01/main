@@ -5,7 +5,11 @@
 </head>
 <body>
 <h1>Introduction</h1>
+<p>I have been tasked with finding as many security and privacy vulnerabilities in Ming Chow’s implementation of the 2048 game server (Comp 20’s Assignment 3). This document will describe the vulnerabilities that were found and offer potential resolutions to the vulnerabilities.</p>
 <h1>Methodology</h1>
+<p>To find the vulnerabilities in Ming’s implementation of the server, I used multiple techniques. To begin, I used curl to send data to the server through the  “https://gameserver2048.herokuapp.com/submit”  url. This allowed me to insert potentially malicious user input into the system and to attempt to overload the system with excess data. I also manipulated the query strings in the address bar with the url “https://gameserver2048.herokuapp.com/scores.json”. </p>
+<p>I inspected the source code Ming provided on Piazza. This allowed me to investigate potential vulnerabilities in the system and understand if there were any protections already in place to prevent some of those vulnerabilities.
+</p>
 <h1>Abstract of Findings</h1>
 <h1>Issues Found</h1>
 <h1>Conclusion</h1>
